@@ -7,6 +7,7 @@ func get_disarm():
 
 func set_disarm():
 	disarm = true
+	
 	if(get_parent().get_dynamite()):
 		if(get_parent().get_node("arm_l").get_disarm()):
 			get_parent().get_parent().non_lethal()
@@ -34,8 +35,21 @@ func clicked():
 				var level = get_tree().get_root().get_node("Level")
 				level.damage()
 				return
-#			var rightHitTexture = preload("res://Sprites/right_hit.png")
-#			get_child(0).set_texture(rightHitTexture)
+#			
+			var body_flags = get_parent().get_node("torso").get_body_flags()
+			var disarm_anim = get_parent().get_node("hand_disarm")
+			var anim_name = "r_hand"
+	
+			if(body_flags[0]):
+				anim_name += "_r"
+			elif(body_flags[1]):
+				anim_name += "_g"
+			elif(body_flags[2]):
+				anim_name += "_b"
+			else:
+				anim_name += "_n"
+	
+			disarm_anim.play(anim_name)
 			set_disarm()
 		elif(!revolver.get_node(str("Barrel/Bullet", revolver.get_chamber())).is_visible()):
 			print("no ammo")

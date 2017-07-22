@@ -1,89 +1,304 @@
-[gd_scene load_steps=145 format=1]
+[gd_scene load_steps=197 format=1]
 
 [ext_resource path="res://Enemy.gd" type="Script" id=1]
-[ext_resource path="res://body.gd" type="Script" id=2]
-[ext_resource path="res://torso.gd" type="Script" id=3]
-[ext_resource path="res://Sprites/Shirt/shirt_l.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/Shirt/shirt_r.png" type="Texture" id=5]
-[ext_resource path="res://arm_l.gd" type="Script" id=6]
-[ext_resource path="res://Sprites/hand_l.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/twitch_l.png" type="Texture" id=8]
-[ext_resource path="res://Sprites/shirt_left.png" type="Texture" id=9]
-[ext_resource path="res://Sprites/Left Draw/body_1.png" type="Texture" id=10]
-[ext_resource path="res://Sprites/Left Draw/body_2.png" type="Texture" id=11]
-[ext_resource path="res://Sprites/Left Draw/body_3.png" type="Texture" id=12]
-[ext_resource path="res://Sprites/Left Draw/lh_1.png" type="Texture" id=13]
-[ext_resource path="res://Sprites/Left Draw/lh_1-2.png" type="Texture" id=14]
-[ext_resource path="res://Sprites/Left Draw/lh_2.png" type="Texture" id=15]
-[ext_resource path="res://Sprites/Left Draw/lh_3.png" type="Texture" id=16]
-[ext_resource path="res://Sprites/Shirt/blue_shirt_l.png" type="Texture" id=17]
-[ext_resource path="res://Sprites/Left Draw/b_body_1.png" type="Texture" id=18]
-[ext_resource path="res://Sprites/Left Draw/b_body_2.png" type="Texture" id=19]
-[ext_resource path="res://Sprites/Left Draw/b_body_3.png" type="Texture" id=20]
-[ext_resource path="res://Sprites/Shirt/green_shirt_l.png" type="Texture" id=21]
-[ext_resource path="res://Sprites/Left Draw/g_body_1.png" type="Texture" id=22]
-[ext_resource path="res://Sprites/Left Draw/g_body_2.png" type="Texture" id=23]
-[ext_resource path="res://Sprites/Left Draw/g_body_3.png" type="Texture" id=24]
-[ext_resource path="res://Sprites/Shirt/red_shirt_l.png" type="Texture" id=25]
-[ext_resource path="res://Sprites/Left Draw/r_body_1.png" type="Texture" id=26]
-[ext_resource path="res://Sprites/Left Draw/r_body_2.png" type="Texture" id=27]
-[ext_resource path="res://Sprites/Left Draw/r_body_3.png" type="Texture" id=28]
-[ext_resource path="res://arm_r.gd" type="Script" id=29]
-[ext_resource path="res://Sprites/hand_r.png" type="Texture" id=30]
-[ext_resource path="res://Sprites/twitch_r.png" type="Texture" id=31]
-[ext_resource path="res://Sprites/shirt_right.png" type="Texture" id=32]
-[ext_resource path="res://Sprites/Right Draw/body_1.png" type="Texture" id=33]
-[ext_resource path="res://Sprites/Right Draw/body_2.png" type="Texture" id=34]
-[ext_resource path="res://Sprites/Right Draw/body_3.png" type="Texture" id=35]
-[ext_resource path="res://Sprites/Right Draw/rh_1.png" type="Texture" id=36]
-[ext_resource path="res://Sprites/Right Draw/rh_1-2.png" type="Texture" id=37]
-[ext_resource path="res://Sprites/Right Draw/rh_2.png" type="Texture" id=38]
-[ext_resource path="res://Sprites/Right Draw/rh_3.png" type="Texture" id=39]
-[ext_resource path="res://Sprites/Shirt/blue_shirt_r.png" type="Texture" id=40]
-[ext_resource path="res://Sprites/Right Draw/b_body_1.png" type="Texture" id=41]
-[ext_resource path="res://Sprites/Right Draw/b_body_2.png" type="Texture" id=42]
-[ext_resource path="res://Sprites/Right Draw/b_body_3.png" type="Texture" id=43]
-[ext_resource path="res://Sprites/Shirt/green_shirt_r.png" type="Texture" id=44]
-[ext_resource path="res://Sprites/Right Draw/g_body_1.png" type="Texture" id=45]
-[ext_resource path="res://Sprites/Right Draw/g_body_2.png" type="Texture" id=46]
-[ext_resource path="res://Sprites/Right Draw/g_body_3.png" type="Texture" id=47]
-[ext_resource path="res://Sprites/Shirt/red_shirt_r.png" type="Texture" id=48]
-[ext_resource path="res://Sprites/Right Draw/r_body_1.png" type="Texture" id=49]
-[ext_resource path="res://Sprites/Right Draw/r_body_2.png" type="Texture" id=50]
-[ext_resource path="res://Sprites/Right Draw/r_body_3.png" type="Texture" id=51]
-[ext_resource path="res://head.gd" type="Script" id=52]
-[ext_resource path="res://face.gd" type="Script" id=53]
-[ext_resource path="res://Sprites/head.png" type="Texture" id=54]
-[ext_resource path="res://Sprites/mask.png" type="Texture" id=55]
-[ext_resource path="res://hat.gd" type="Script" id=56]
-[ext_resource path="res://Sprites/hat.png" type="Texture" id=57]
-[ext_resource path="res://legs.gd" type="Script" id=58]
-[ext_resource path="res://Sprites/pants.png" type="Texture" id=59]
-[ext_resource path="res://leg_r.gd" type="Script" id=60]
-[ext_resource path="res://Sprites/foot_r.png" type="Texture" id=61]
-[ext_resource path="res://leg_l.gd" type="Script" id=62]
-[ext_resource path="res://Sprites/foot_l.png" type="Texture" id=63]
-[ext_resource path="res://Reaction.gd" type="Script" id=64]
-[ext_resource path="res://Sprites/Death/Import/pants_b_1.tex" type="Texture" id=65]
-[ext_resource path="res://Sprites/Death/Import/pants_b_2.tex" type="Texture" id=66]
-[ext_resource path="res://Sprites/Death/Import/pants_b_3.tex" type="Texture" id=67]
-[ext_resource path="res://Sprites/Death/Import/shirt_g_1.tex" type="Texture" id=68]
-[ext_resource path="res://Sprites/Death/Import/shirt_g_2.tex" type="Texture" id=69]
-[ext_resource path="res://Sprites/Death/Import/shirt_n_1.tex" type="Texture" id=70]
-[ext_resource path="res://Sprites/Death/Import/shirt_n_2.tex" type="Texture" id=71]
-[ext_resource path="res://Sprites/Death/Import/shirt_r_1.tex" type="Texture" id=72]
-[ext_resource path="res://Sprites/Death/Import/shirt_r_2.tex" type="Texture" id=73]
-[ext_resource path="res://Sprites/Death/Import/pants_g_1.tex" type="Texture" id=74]
-[ext_resource path="res://Sprites/Death/Import/pants_g_2.tex" type="Texture" id=75]
-[ext_resource path="res://Sprites/Death/Import/pants_g_3.tex" type="Texture" id=76]
-[ext_resource path="res://Sprites/Death/Import/shirt_b_1.tex" type="Texture" id=77]
-[ext_resource path="res://Sprites/Death/Import/shirt_b_2.tex" type="Texture" id=78]
-[ext_resource path="res://Sprites/Death/Import/pants_n_1.tex" type="Texture" id=79]
-[ext_resource path="res://Sprites/Death/Import/pants_n_2.tex" type="Texture" id=80]
-[ext_resource path="res://Sprites/Death/Import/pants_n_3.tex" type="Texture" id=81]
-[ext_resource path="res://Sprites/Death/Import/pants_r_1.tex" type="Texture" id=82]
-[ext_resource path="res://Sprites/Death/Import/pants_r_2.tex" type="Texture" id=83]
-[ext_resource path="res://Sprites/Death/Import/pants_r_3.tex" type="Texture" id=84]
+[ext_resource path="res://legs.gd" type="Script" id=2]
+[ext_resource path="res://Sprites/pants.png" type="Texture" id=3]
+[ext_resource path="res://leg_r.gd" type="Script" id=4]
+[ext_resource path="res://Sprites/foot_r.png" type="Texture" id=5]
+[ext_resource path="res://leg_l.gd" type="Script" id=6]
+[ext_resource path="res://Sprites/foot_l.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Disarm/Import/l_leg_b.tex" type="Texture" id=8]
+[ext_resource path="res://Sprites/Disarm/Import/l_leg_d.tex" type="Texture" id=9]
+[ext_resource path="res://Sprites/Disarm/Import/l_leg_g.tex" type="Texture" id=10]
+[ext_resource path="res://Sprites/Disarm/Import/l_leg_n.tex" type="Texture" id=11]
+[ext_resource path="res://Sprites/Disarm/Import/l_leg_r.tex" type="Texture" id=12]
+[ext_resource path="res://Sprites/Disarm/Import/r_leg_d.tex" type="Texture" id=13]
+[ext_resource path="res://Sprites/Disarm/Import/r_leg_b.tex" type="Texture" id=14]
+[ext_resource path="res://Sprites/Disarm/Import/r_leg_g.tex" type="Texture" id=15]
+[ext_resource path="res://Sprites/Disarm/Import/r_leg_n.tex" type="Texture" id=16]
+[ext_resource path="res://Sprites/Disarm/Import/r_leg_r.tex" type="Texture" id=17]
+[ext_resource path="res://body.gd" type="Script" id=18]
+[ext_resource path="res://torso.gd" type="Script" id=19]
+[ext_resource path="res://Sprites/shirt_left.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/shirt_right.png" type="Texture" id=21]
+[ext_resource path="res://arm_l.gd" type="Script" id=22]
+[ext_resource path="res://Sprites/hand_l.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/twitch_l.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/Left Draw/Import/body_1.tex" type="Texture" id=25]
+[ext_resource path="res://Sprites/Left Draw/Import/body_2.tex" type="Texture" id=26]
+[ext_resource path="res://Sprites/Left Draw/Import/body_3.tex" type="Texture" id=27]
+[ext_resource path="res://Sprites/Left Draw/Import/lh_1.tex" type="Texture" id=28]
+[ext_resource path="res://Sprites/Left Draw/Import/lh_1-2.tex" type="Texture" id=29]
+[ext_resource path="res://Sprites/Left Draw/Import/lh_2.tex" type="Texture" id=30]
+[ext_resource path="res://Sprites/Left Draw/Import/lh_3.tex" type="Texture" id=31]
+[ext_resource path="res://Sprites/Left Draw/Import/l_dynamite_2.tex" type="Texture" id=32]
+[ext_resource path="res://Sprites/Left Draw/Import/l_dynamite_3.tex" type="Texture" id=33]
+[ext_resource path="res://Sprites/Shirt/Import/blue_shirt_l.tex" type="Texture" id=34]
+[ext_resource path="res://Sprites/Left Draw/Import/b_body_1.tex" type="Texture" id=35]
+[ext_resource path="res://Sprites/Left Draw/Import/b_body_2.tex" type="Texture" id=36]
+[ext_resource path="res://Sprites/Left Draw/Import/b_body_3.tex" type="Texture" id=37]
+[ext_resource path="res://Sprites/Shirt/Import/green_shirt_l.tex" type="Texture" id=38]
+[ext_resource path="res://Sprites/Left Draw/Import/g_body_1.tex" type="Texture" id=39]
+[ext_resource path="res://Sprites/Left Draw/Import/g_body_2.tex" type="Texture" id=40]
+[ext_resource path="res://Sprites/Left Draw/Import/g_body_3.tex" type="Texture" id=41]
+[ext_resource path="res://Sprites/Shirt/Import/red_shirt_l.tex" type="Texture" id=42]
+[ext_resource path="res://Sprites/Left Draw/Import/r_body_1.tex" type="Texture" id=43]
+[ext_resource path="res://Sprites/Left Draw/Import/r_body_2.tex" type="Texture" id=44]
+[ext_resource path="res://Sprites/Left Draw/Import/r_body_3.tex" type="Texture" id=45]
+[ext_resource path="res://Sprites/Left Draw/Import/l_revolver_2.tex" type="Texture" id=46]
+[ext_resource path="res://Sprites/Left Draw/Import/l_revolver_3.tex" type="Texture" id=47]
+[ext_resource path="res://arm_r.gd" type="Script" id=48]
+[ext_resource path="res://Sprites/hand_r.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/twitch_r.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/Right Draw/Import/body_1.tex" type="Texture" id=51]
+[ext_resource path="res://Sprites/Right Draw/Import/body_2.tex" type="Texture" id=52]
+[ext_resource path="res://Sprites/Right Draw/Import/body_3.tex" type="Texture" id=53]
+[ext_resource path="res://Sprites/Right Draw/Import/rh_1.tex" type="Texture" id=54]
+[ext_resource path="res://Sprites/Right Draw/Import/rh_1-2.tex" type="Texture" id=55]
+[ext_resource path="res://Sprites/Right Draw/Import/rh_2.tex" type="Texture" id=56]
+[ext_resource path="res://Sprites/Right Draw/Import/rh_3.tex" type="Texture" id=57]
+[ext_resource path="res://Sprites/Right Draw/Import/r_dynamite_2.tex" type="Texture" id=58]
+[ext_resource path="res://Sprites/Right Draw/Import/r_dynamite_3.tex" type="Texture" id=59]
+[ext_resource path="res://Sprites/Shirt/Import/blue_shirt_r.tex" type="Texture" id=60]
+[ext_resource path="res://Sprites/Right Draw/Import/b_body_1.tex" type="Texture" id=61]
+[ext_resource path="res://Sprites/Right Draw/Import/b_body_2.tex" type="Texture" id=62]
+[ext_resource path="res://Sprites/Right Draw/Import/b_body_3.tex" type="Texture" id=63]
+[ext_resource path="res://Sprites/Shirt/Import/green_shirt_r.tex" type="Texture" id=64]
+[ext_resource path="res://Sprites/Right Draw/Import/g_body_1.tex" type="Texture" id=65]
+[ext_resource path="res://Sprites/Right Draw/Import/g_body_2.tex" type="Texture" id=66]
+[ext_resource path="res://Sprites/Right Draw/Import/g_body_3.tex" type="Texture" id=67]
+[ext_resource path="res://Sprites/Shirt/Import/red_shirt_r.tex" type="Texture" id=68]
+[ext_resource path="res://Sprites/Right Draw/Import/r_body_1.tex" type="Texture" id=69]
+[ext_resource path="res://Sprites/Right Draw/Import/r_body_2.tex" type="Texture" id=70]
+[ext_resource path="res://Sprites/Right Draw/Import/r_body_3.tex" type="Texture" id=71]
+[ext_resource path="res://Sprites/Right Draw/Import/r_revolver_2.tex" type="Texture" id=72]
+[ext_resource path="res://Sprites/Right Draw/Import/r_revolver_3.tex" type="Texture" id=73]
+[ext_resource path="res://Sprites/Disarm/Import/l_hand_d.tex" type="Texture" id=74]
+[ext_resource path="res://Sprites/Shirt/Import/shirt_l.tex" type="Texture" id=75]
+[ext_resource path="res://Sprites/Disarm/Import/r_hand_d.tex" type="Texture" id=76]
+[ext_resource path="res://Sprites/Shirt/Import/shirt_r.tex" type="Texture" id=77]
+[ext_resource path="res://head.gd" type="Script" id=78]
+[ext_resource path="res://face.gd" type="Script" id=79]
+[ext_resource path="res://Sprites/head.png" type="Texture" id=80]
+[ext_resource path="res://Sprites/mask.png" type="Texture" id=81]
+[ext_resource path="res://hat.gd" type="Script" id=82]
+[ext_resource path="res://Sprites/hat.png" type="Texture" id=83]
+[ext_resource path="res://Reaction.gd" type="Script" id=84]
+[ext_resource path="res://Sprites/Death/Import/pants_b_1.tex" type="Texture" id=85]
+[ext_resource path="res://Sprites/Death/Import/pants_b_2.tex" type="Texture" id=86]
+[ext_resource path="res://Sprites/Death/Import/pants_b_3.tex" type="Texture" id=87]
+[ext_resource path="res://Sprites/Death/Import/shirt_g_1.tex" type="Texture" id=88]
+[ext_resource path="res://Sprites/Death/Import/shirt_g_2.tex" type="Texture" id=89]
+[ext_resource path="res://Sprites/Death/Import/shirt_n_1.tex" type="Texture" id=90]
+[ext_resource path="res://Sprites/Death/Import/shirt_n_2.tex" type="Texture" id=91]
+[ext_resource path="res://Sprites/Death/Import/shirt_r_1.tex" type="Texture" id=92]
+[ext_resource path="res://Sprites/Death/Import/shirt_r_2.tex" type="Texture" id=93]
+[ext_resource path="res://Sprites/Death/Import/pants_g_1.tex" type="Texture" id=94]
+[ext_resource path="res://Sprites/Death/Import/pants_g_2.tex" type="Texture" id=95]
+[ext_resource path="res://Sprites/Death/Import/pants_g_3.tex" type="Texture" id=96]
+[ext_resource path="res://Sprites/Death/Import/shirt_b_1.tex" type="Texture" id=97]
+[ext_resource path="res://Sprites/Death/Import/shirt_b_2.tex" type="Texture" id=98]
+[ext_resource path="res://Sprites/Death/Import/pants_n_1.tex" type="Texture" id=99]
+[ext_resource path="res://Sprites/Death/Import/pants_n_2.tex" type="Texture" id=100]
+[ext_resource path="res://Sprites/Death/Import/pants_n_3.tex" type="Texture" id=101]
+[ext_resource path="res://Sprites/Death/Import/pants_r_1.tex" type="Texture" id=102]
+[ext_resource path="res://Sprites/Death/Import/pants_r_2.tex" type="Texture" id=103]
+[ext_resource path="res://Sprites/Death/Import/pants_r_3.tex" type="Texture" id=104]
+[ext_resource path="res://Sprites/Non-lethal/b_nl.png" type="Texture" id=105]
+[ext_resource path="res://Sprites/Non-lethal/g_nl.png" type="Texture" id=106]
+[ext_resource path="res://Sprites/Non-lethal/n_nl.png" type="Texture" id=107]
+[ext_resource path="res://Sprites/Non-lethal/r_nl.png" type="Texture" id=108]
+
+[sub_resource type="ConvexPolygonShape2D" id=45]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -36.0059, 77.4895, -25.0058, 91.5936, -43.4472, 93.8584, -48.6237, 82.2112 )
+
+[sub_resource type="ConvexPolygonShape2D" id=46]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -43.4472, 93.8584, -62.2121, 94.5054, -57.0356, 85.123, -48.6237, 82.2112 )
+
+[sub_resource type="ConvexPolygonShape2D" id=47]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -5.59378, -0.0968571, -3.97612, -3.65572, 0, -5, 0, 35, -16.9174, 34.6525 )
+
+[sub_resource type="ConvexPolygonShape2D" id=48]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -44.4178, 12.8445, -15.6233, 0.226675, -5.59378, -0.0968571, -16.9174, 34.6525, -37.3, 39.1819 )
+
+[sub_resource type="ConvexPolygonShape2D" id=49]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -73.2122, 32.58, -62.2121, 20.6093, -44.4178, 12.8445, -37.3, 39.1819, -36.0059, 77.4895, -48.6237, 82.2112 )
+
+[sub_resource type="ConvexPolygonShape2D" id=50]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 68.2935, 86.1674, 69.9112, 94.5792, 38.5285, 89.7262, 45.6462, 77.7555, 58.5875, 82.1542 )
+
+[sub_resource type="ConvexPolygonShape2D" id=51]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 0, 35, 0, -5, 6.33477, -3.6273, 8.3186, -0.320916, 20.0871, 34.9183 )
+
+[sub_resource type="ConvexPolygonShape2D" id=52]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 36.5873, 40.5492, 20.0871, 34.9183, 8.3186, -0.320916, 18.4694, -0.47747, 67.6465, 28.317, 71.2053, 36.0818 )
+
+[sub_resource type="ConvexPolygonShape2D" id=53]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 36.5873, 40.5492, 71.2053, 36.0818, 65.0582, 54.5232, 45.6462, 77.7555 )
+
+[sub_resource type="ConvexPolygonShape2D" id=54]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 45.6462, 77.7555, 65.0582, 54.5232, 58.5875, 82.1542 )
+
+[sub_resource type="ConvexPolygonShape2D" id=55]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 68.2935, 86.1674, 58.5875, 82.1542, 64.7347, 81.9614 )
+
+[sub_resource type="Animation" id=73]
+
+resource/name = "l_leg_b"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("../body/torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 8 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("../body/arm_l/hand_l:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 9 ) ] }
+
+[sub_resource type="Animation" id=74]
+
+resource/name = "l_leg_g"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("../body/torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 10 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("../body/arm_l/hand_l:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 9 ) ] }
+
+[sub_resource type="Animation" id=75]
+
+resource/name = "l_leg_n"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("../body/torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 11 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("../body/arm_l/hand_l:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 9 ) ] }
+
+[sub_resource type="Animation" id=76]
+
+resource/name = "l_leg_r"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("../body/torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 12 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("../body/arm_l/hand_l:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 9 ) ] }
+
+[sub_resource type="Animation" id=77]
+
+resource/name = "r_leg_b"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("../body/arm_r/hand_r:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 13 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("../body/torso/shirt_r:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 14 ) ] }
+
+[sub_resource type="Animation" id=78]
+
+resource/name = "r_leg_g"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("../body/arm_r/hand_r:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 13 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("../body/torso/shirt_r:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 15 ) ] }
+
+[sub_resource type="Animation" id=79]
+
+resource/name = "r_leg_n"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("../body/arm_r/hand_r:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 13 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("../body/torso/shirt_r:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 16 ) ] }
+
+[sub_resource type="Animation" id=80]
+
+resource/name = "r_leg_r"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("../body/arm_r/hand_r:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 13 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("../body/torso/shirt_r:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 17 ) ] }
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -145,11 +360,99 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("hand_l:texture")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.1, 0.4, 0.6, 0.9 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 7 ) ] }
+tracks/0/keys = { "times":FloatArray( 0, 0.1, 0.4, 0.6, 0.9 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 23 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 23 ) ] }
+
+[sub_resource type="Animation" id=81]
+
+resource/name = "dyn_draw_l"
+length = 0.1
+loop = false
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("../torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 20 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("hand_l:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 23 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 32 ), ExtResource( 33 ) ] }
+
+[sub_resource type="Animation" id=82]
+
+resource/name = "dyn_draw_l_b"
+length = 0.1
+loop = false
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("../torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("hand_l:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 23 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 32 ), ExtResource( 33 ) ] }
+
+[sub_resource type="Animation" id=83]
+
+resource/name = "dyn_draw_l_g"
+length = 0.1
+loop = false
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("../torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("hand_l:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 23 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 32 ), ExtResource( 33 ) ] }
+
+[sub_resource type="Animation" id=84]
+
+resource/name = "dyn_draw_l_r"
+length = 0.1
+loop = false
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("../torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("hand_l:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 23 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 32 ), ExtResource( 33 ) ] }
 
 [sub_resource type="Animation" id=12]
 
-resource/name = "draw_l"
+resource/name = "gun_draw_l"
 length = 0.1
 loop = false
 step = 0.01
@@ -157,16 +460,21 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("../torso/shirt_l:texture")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ] }
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 20 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("hand_l:texture")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 7 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ] }
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 23 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 46 ), ExtResource( 47 ) ] }
 
 [sub_resource type="Animation" id=13]
 
-resource/name = "draw_l_b"
+resource/name = "gun_draw_l_b"
 length = 0.1
 loop = false
 step = 0.01
@@ -174,16 +482,21 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("../torso/shirt_l:texture")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ] }
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("hand_l:texture")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 7 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ] }
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 23 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 46 ), ExtResource( 47 ) ] }
 
 [sub_resource type="Animation" id=14]
 
-resource/name = "draw_l_g"
+resource/name = "gun_draw_l_g"
 length = 0.1
 loop = false
 step = 0.01
@@ -191,16 +504,21 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("../torso/shirt_l:texture")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ) ] }
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("hand_l:texture")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 7 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ] }
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 23 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 46 ), ExtResource( 47 ) ] }
 
 [sub_resource type="Animation" id=15]
 
-resource/name = "draw_l_r"
+resource/name = "gun_draw_l_r"
 length = 0.1
 loop = false
 step = 0.01
@@ -208,12 +526,17 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("../torso/shirt_l:texture")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ] }
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("hand_l:texture")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 7 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ] }
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 23 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 46 ), ExtResource( 47 ) ] }
 
 [sub_resource type="ConvexPolygonShape2D" id=16]
 
@@ -254,11 +577,99 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("hand_r:texture")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.1, 0.2, 0.3, 0.4 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 30 ), ExtResource( 31 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 30 ) ] }
+tracks/0/keys = { "times":FloatArray( 0, 0.1, 0.2, 0.3, 0.4 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 49 ), ExtResource( 50 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 49 ) ] }
+
+[sub_resource type="Animation" id=85]
+
+resource/name = "dyn_draw_r"
+length = 0.1
+loop = false
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("../torso/shirt_r:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 21 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("hand_r:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 49 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 58 ), ExtResource( 59 ) ] }
+
+[sub_resource type="Animation" id=86]
+
+resource/name = "dyn_draw_r_b"
+length = 0.1
+loop = false
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("../torso/shirt_r:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("hand_r:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 49 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 58 ), ExtResource( 59 ) ] }
+
+[sub_resource type="Animation" id=87]
+
+resource/name = "dyn_draw_r_g"
+length = 0.1
+loop = false
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("../torso/shirt_r:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("hand_r:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 49 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 58 ), ExtResource( 59 ) ] }
+
+[sub_resource type="Animation" id=88]
+
+resource/name = "dyn_draw_r_r"
+length = 0.1
+loop = false
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("../torso/shirt_r:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("hand_r:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 49 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 58 ), ExtResource( 59 ) ] }
 
 [sub_resource type="Animation" id=23]
 
-resource/name = "draw_r"
+resource/name = "gun_draw_r"
 length = 0.1
 loop = false
 step = 0.01
@@ -266,16 +677,26 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("../torso/shirt_r:texture")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ) ] }
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 21 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("hand_r:texture")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 30 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ) ] }
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 49 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 72 ), ExtResource( 73 ) ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("weapon:visibility/visible")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0.07 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
 
 [sub_resource type="Animation" id=24]
 
-resource/name = "draw_r_b"
+resource/name = "gun_draw_r_b"
 length = 0.1
 loop = false
 step = 0.01
@@ -283,16 +704,21 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("../torso/shirt_r:texture")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ) ] }
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("hand_r:texture")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 30 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ) ] }
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 49 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 72 ), ExtResource( 73 ) ] }
 
 [sub_resource type="Animation" id=25]
 
-resource/name = "draw_r_g"
+resource/name = "gun_draw_r_g"
 length = 0.1
 loop = false
 step = 0.01
@@ -300,16 +726,21 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("../torso/shirt_r:texture")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ) ] }
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("hand_r:texture")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 30 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ) ] }
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 49 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 72 ), ExtResource( 73 ) ] }
 
 [sub_resource type="Animation" id=26]
 
-resource/name = "draw_r_r"
+resource/name = "gun_draw_r_r"
 length = 0.1
 loop = false
 step = 0.01
@@ -317,380 +748,206 @@ tracks/0/type = "value"
 tracks/0/path = NodePath("../torso/shirt_r:texture")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ) ] }
+tracks/0/keys = { "times":FloatArray( 0, 0.03, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("hand_r:texture")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 30 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ) ] }
+tracks/1/keys = { "times":FloatArray( 0, 0.03, 0.04, 0.07, 0.1 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ ExtResource( 49 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("weapon:texture")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0.07, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ ExtResource( 72 ), ExtResource( 73 ) ] }
 
-[sub_resource type="ConvexPolygonShape2D" id=27]
+[sub_resource type="Animation" id=27]
 
-custom_solver_bias = 0.0
-points = Vector2Array( 22.3644, -66.6195, 23.623, -68.2858, 25.6791, -67.0007, 26.0647, -61.6032, 23.623, -60.1895 )
+resource/name = "l_hand_b"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 34 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("arm_l/hand_l:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 74 ) ] }
 
-[sub_resource type="ConvexPolygonShape2D" id=28]
+[sub_resource type="Animation" id=28]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -23.284, -63.1453, -22.8984, -67.3862, -21.2278, -68.2858, -19.1716, -66.1011, -20.9708, -61.3461 )
+resource/name = "l_hand_g"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 38 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("arm_l/hand_l:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 74 ) ] }
 
-[sub_resource type="ConvexPolygonShape2D" id=29]
+[sub_resource type="Animation" id=29]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -17.758, -70.085, -13.7741, -73.2978, -9.14765, -76.125, 0.233742, -76.125, 11.0407, -76.0019, 19.129, -72.7666, 22.3644, -66.6195, 23.623, -60.1895, 24.0085, -53.2499, 21.9523, -47.2098, 16.9403, -42.9689, 9.74364, -40.7842, -8.04778, -40.7368, -15.1655, -43.9721, -19.1716, -66.1011 )
+resource/name = "l_hand_n"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 75 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("arm_l/hand_l:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 74 ) ] }
 
-[sub_resource type="ConvexPolygonShape2D" id=30]
+[sub_resource type="Animation" id=30]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -20.4567, -53.3784, -20.9708, -61.3461, -19.1716, -66.1011, -15.1655, -43.9721, -18.4005, -46.4387 )
+resource/name = "l_hand_r"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 42 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("arm_l/hand_l:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 74 ) ] }
 
-[sub_resource type="ConvexPolygonShape2D" id=31]
+[sub_resource type="Animation" id=31]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -27.1945, -72.3484, -27.1945, -81.0871, -25.6057, -76.7178 )
+resource/name = "r_hand_b"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("arm_r/hand_r:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 76 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("torso/shirt_r:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 60 ) ] }
 
-[sub_resource type="ConvexPolygonShape2D" id=32]
+[sub_resource type="Animation" id=32]
 
-custom_solver_bias = 0.0
-points = Vector2Array( 25.635, -79.4983, 27.6211, -81.4843, 27.2238, -70.7595 )
+resource/name = "r_hand_g"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("arm_r/hand_r:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 76 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("torso/shirt_r:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 64 ) ] }
 
-[sub_resource type="ConvexPolygonShape2D" id=33]
+[sub_resource type="Animation" id=33]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -17.2641, -82.676, -14.0864, -87.8398, -5.72393, -95.0755, -2.56721, -93.0035, 0.213287, -90.223, 17.2797, -62.0478, 8.92645, -57.8069, -4.82434, -57.8069, -20.4419, -65.1985 )
+resource/name = "r_hand_n"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("arm_r/hand_r:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 76 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("torso/shirt_r:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 77 ) ] }
 
-[sub_resource type="ConvexPolygonShape2D" id=34]
+[sub_resource type="Animation" id=34]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -20.4419, -65.1985, -27.1945, -72.3484, -25.6057, -76.7178, -21.7879, -81.8387, -17.2641, -82.676 )
+resource/name = "r_hand_r"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("arm_r/hand_r:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 76 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("torso/shirt_r:texture")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 68 ) ] }
 
 [sub_resource type="ConvexPolygonShape2D" id=35]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 25.635, -79.4983, 27.2238, -70.7595, 17.2797, -62.0478, 0.213287, -90.223, 18.6934, -82.4813 )
+points = Vector2Array( 22.3644, -66.6195, 23.623, -68.2858, 25.6791, -67.0007, 26.0647, -61.6032, 23.623, -60.1895 )
 
 [sub_resource type="ConvexPolygonShape2D" id=36]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 11.3682, -93.2763, 15.7376, -88.9069, 18.6934, -82.4813, 0.213287, -90.223, 5.77428, -94.9896 )
+points = Vector2Array( -23.284, -63.1453, -22.8984, -67.3862, -21.2278, -68.2858, -19.1716, -66.1011, -20.9708, -61.3461 )
 
 [sub_resource type="ConvexPolygonShape2D" id=37]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -36.0059, 77.4895, -25.0058, 91.5936, -43.4472, 93.8584, -48.6237, 82.2112 )
+points = Vector2Array( -17.758, -70.085, -13.7741, -73.2978, -9.14765, -76.125, 0.233742, -76.125, 11.0407, -76.0019, 19.129, -72.7666, 22.3644, -66.6195, 23.623, -60.1895, 24.0085, -53.2499, 21.9523, -47.2098, 16.9403, -42.9689, 9.74364, -40.7842, -8.04778, -40.7368, -15.1655, -43.9721, -19.1716, -66.1011 )
 
 [sub_resource type="ConvexPolygonShape2D" id=38]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -43.4472, 93.8584, -62.2121, 94.5054, -57.0356, 85.123, -48.6237, 82.2112 )
+points = Vector2Array( -20.4567, -53.3784, -20.9708, -61.3461, -19.1716, -66.1011, -15.1655, -43.9721, -18.4005, -46.4387 )
 
 [sub_resource type="ConvexPolygonShape2D" id=39]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -5.59378, -0.0968571, -3.97612, -3.65572, 0, -5, 0, 35, -16.9174, 34.6525 )
+points = Vector2Array( -27.1945, -72.3484, -27.1945, -81.0871, -25.6057, -76.7178 )
 
 [sub_resource type="ConvexPolygonShape2D" id=40]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -44.4178, 12.8445, -15.6233, 0.226675, -5.59378, -0.0968571, -16.9174, 34.6525, -37.3, 39.1819 )
+points = Vector2Array( 25.635, -79.4983, 27.6211, -81.4843, 27.2238, -70.7595 )
 
 [sub_resource type="ConvexPolygonShape2D" id=41]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -73.2122, 32.58, -62.2121, 20.6093, -44.4178, 12.8445, -37.3, 39.1819, -36.0059, 77.4895, -48.6237, 82.2112 )
+points = Vector2Array( -17.2641, -82.676, -14.0864, -87.8398, -5.72393, -95.0755, -2.56721, -93.0035, 0.213287, -90.223, 17.2797, -62.0478, 8.92645, -57.8069, -4.82434, -57.8069, -20.4419, -65.1985 )
 
 [sub_resource type="ConvexPolygonShape2D" id=42]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 68.2935, 86.1674, 69.9112, 94.5792, 38.5285, 89.7262, 45.6462, 77.7555, 58.5875, 82.1542 )
+points = Vector2Array( -20.4419, -65.1985, -27.1945, -72.3484, -25.6057, -76.7178, -21.7879, -81.8387, -17.2641, -82.676 )
 
 [sub_resource type="ConvexPolygonShape2D" id=43]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 0, 35, 0, -5, 6.33477, -3.6273, 8.3186, -0.320916, 20.0871, 34.9183 )
+points = Vector2Array( 25.635, -79.4983, 27.2238, -70.7595, 17.2797, -62.0478, 0.213287, -90.223, 18.6934, -82.4813 )
 
 [sub_resource type="ConvexPolygonShape2D" id=44]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 36.5873, 40.5492, 20.0871, 34.9183, 8.3186, -0.320916, 18.4694, -0.47747, 67.6465, 28.317, 71.2053, 36.0818 )
-
-[sub_resource type="ConvexPolygonShape2D" id=45]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 36.5873, 40.5492, 71.2053, 36.0818, 65.0582, 54.5232, 45.6462, 77.7555 )
-
-[sub_resource type="ConvexPolygonShape2D" id=46]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 45.6462, 77.7555, 65.0582, 54.5232, 58.5875, 82.1542 )
-
-[sub_resource type="ConvexPolygonShape2D" id=47]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 68.2935, 86.1674, 58.5875, 82.1542, 64.7347, 81.9614 )
-
-[sub_resource type="Animation" id=49]
-
-resource/name = "lethal_b_g"
-length = 1.0
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath("body:visibility/visible")
-tracks/0/interp = 1
-tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/1/type = "value"
-tracks/1/path = NodePath("head:visibility/visible")
-tracks/1/interp = 1
-tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/2/type = "value"
-tracks/2/path = NodePath("legs:visibility/visible")
-tracks/2/interp = 1
-tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/3/type = "value"
-tracks/3/path = NodePath("Death:texture")
-tracks/3/interp = 1
-tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ) ] }
-tracks/4/type = "value"
-tracks/4/path = NodePath("Death/shirt:texture")
-tracks/4/interp = 1
-tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 68 ), ExtResource( 69 ), null ] }
-tracks/5/type = "value"
-tracks/5/path = NodePath("Death:visibility/visible")
-tracks/5/interp = 1
-tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
-
-[sub_resource type="Animation" id=50]
-
-resource/name = "lethal_b_n"
-length = 1.0
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath("body:visibility/visible")
-tracks/0/interp = 1
-tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/1/type = "value"
-tracks/1/path = NodePath("head:visibility/visible")
-tracks/1/interp = 1
-tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/2/type = "value"
-tracks/2/path = NodePath("legs:visibility/visible")
-tracks/2/interp = 1
-tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/3/type = "value"
-tracks/3/path = NodePath("Death:texture")
-tracks/3/interp = 1
-tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ) ] }
-tracks/4/type = "value"
-tracks/4/path = NodePath("Death/shirt:texture")
-tracks/4/interp = 1
-tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 70 ), ExtResource( 71 ), null ] }
-tracks/5/type = "value"
-tracks/5/path = NodePath("Death:visibility/visible")
-tracks/5/interp = 1
-tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
-
-[sub_resource type="Animation" id=51]
-
-resource/name = "lethal_b_r"
-length = 1.0
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath("body:visibility/visible")
-tracks/0/interp = 1
-tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/1/type = "value"
-tracks/1/path = NodePath("head:visibility/visible")
-tracks/1/interp = 1
-tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/2/type = "value"
-tracks/2/path = NodePath("legs:visibility/visible")
-tracks/2/interp = 1
-tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/3/type = "value"
-tracks/3/path = NodePath("Death:texture")
-tracks/3/interp = 1
-tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ) ] }
-tracks/4/type = "value"
-tracks/4/path = NodePath("Death/shirt:texture")
-tracks/4/interp = 1
-tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 72 ), ExtResource( 73 ), null ] }
-tracks/5/type = "value"
-tracks/5/path = NodePath("Death:visibility/visible")
-tracks/5/interp = 1
-tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
-
-[sub_resource type="Animation" id=52]
-
-resource/name = "lethal_g_b"
-length = 1.0
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath("body:visibility/visible")
-tracks/0/interp = 1
-tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/1/type = "value"
-tracks/1/path = NodePath("head:visibility/visible")
-tracks/1/interp = 1
-tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/2/type = "value"
-tracks/2/path = NodePath("legs:visibility/visible")
-tracks/2/interp = 1
-tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/3/type = "value"
-tracks/3/path = NodePath("Death:texture")
-tracks/3/interp = 1
-tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ) ] }
-tracks/4/type = "value"
-tracks/4/path = NodePath("Death/shirt:texture")
-tracks/4/interp = 1
-tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 77 ), ExtResource( 78 ), null ] }
-tracks/5/type = "value"
-tracks/5/path = NodePath("Death:visibility/visible")
-tracks/5/interp = 1
-tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
-
-[sub_resource type="Animation" id=53]
-
-resource/name = "lethal_g_n"
-length = 1.0
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath("body:visibility/visible")
-tracks/0/interp = 1
-tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/1/type = "value"
-tracks/1/path = NodePath("head:visibility/visible")
-tracks/1/interp = 1
-tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/2/type = "value"
-tracks/2/path = NodePath("legs:visibility/visible")
-tracks/2/interp = 1
-tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/3/type = "value"
-tracks/3/path = NodePath("Death:texture")
-tracks/3/interp = 1
-tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ) ] }
-tracks/4/type = "value"
-tracks/4/path = NodePath("Death/shirt:texture")
-tracks/4/interp = 1
-tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 70 ), ExtResource( 71 ), null ] }
-tracks/5/type = "value"
-tracks/5/path = NodePath("Death:visibility/visible")
-tracks/5/interp = 1
-tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
-
-[sub_resource type="Animation" id=54]
-
-resource/name = "lethal_g_r"
-length = 1.0
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath("body:visibility/visible")
-tracks/0/interp = 1
-tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/1/type = "value"
-tracks/1/path = NodePath("head:visibility/visible")
-tracks/1/interp = 1
-tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/2/type = "value"
-tracks/2/path = NodePath("legs:visibility/visible")
-tracks/2/interp = 1
-tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/3/type = "value"
-tracks/3/path = NodePath("Death:texture")
-tracks/3/interp = 1
-tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ) ] }
-tracks/4/type = "value"
-tracks/4/path = NodePath("Death/shirt:texture")
-tracks/4/interp = 1
-tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 72 ), ExtResource( 73 ), null ] }
-tracks/5/type = "value"
-tracks/5/path = NodePath("Death:visibility/visible")
-tracks/5/interp = 1
-tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
-
-[sub_resource type="Animation" id=55]
-
-resource/name = "lethal_n_b"
-length = 1.0
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath("body:visibility/visible")
-tracks/0/interp = 1
-tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/1/type = "value"
-tracks/1/path = NodePath("head:visibility/visible")
-tracks/1/interp = 1
-tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/2/type = "value"
-tracks/2/path = NodePath("legs:visibility/visible")
-tracks/2/interp = 1
-tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/3/type = "value"
-tracks/3/path = NodePath("Death:texture")
-tracks/3/interp = 1
-tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ) ] }
-tracks/4/type = "value"
-tracks/4/path = NodePath("Death/shirt:texture")
-tracks/4/interp = 1
-tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 77 ), ExtResource( 78 ), null ] }
-tracks/5/type = "value"
-tracks/5/path = NodePath("Death:visibility/visible")
-tracks/5/interp = 1
-tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
+points = Vector2Array( 11.3682, -93.2763, 15.7376, -88.9069, 18.6934, -82.4813, 0.213287, -90.223, 5.77428, -94.9896 )
 
 [sub_resource type="Animation" id=56]
 
-resource/name = "lethal_n_g"
 length = 1.0
 loop = false
 step = 0.1
@@ -713,49 +970,12 @@ tracks/3/type = "value"
 tracks/3/path = NodePath("Death:texture")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ) ] }
+tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ) ] }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Death/shirt:texture")
 tracks/4/interp = 1
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 68 ), ExtResource( 69 ), null ] }
-tracks/5/type = "value"
-tracks/5/path = NodePath("Death:visibility/visible")
-tracks/5/interp = 1
-tracks/5/imported = false
-tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
-
-[sub_resource type="Animation" id=48]
-
-resource/name = "lethal_n_n"
-length = 1.0
-loop = false
-step = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath("body:visibility/visible")
-tracks/0/interp = 1
-tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/1/type = "value"
-tracks/1/path = NodePath("head:visibility/visible")
-tracks/1/interp = 1
-tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/2/type = "value"
-tracks/2/path = NodePath("legs:visibility/visible")
-tracks/2/interp = 1
-tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
-tracks/3/type = "value"
-tracks/3/path = NodePath("Death:texture")
-tracks/3/interp = 1
-tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ) ] }
-tracks/4/type = "value"
-tracks/4/path = NodePath("Death/shirt:texture")
-tracks/4/interp = 1
-tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 70 ), ExtResource( 71 ), null ] }
+tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 88 ), ExtResource( 89 ), null ] }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Death:visibility/visible")
 tracks/5/interp = 1
@@ -764,7 +984,6 @@ tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "updat
 
 [sub_resource type="Animation" id=57]
 
-resource/name = "lethal_n_r"
 length = 1.0
 loop = false
 step = 0.1
@@ -787,12 +1006,12 @@ tracks/3/type = "value"
 tracks/3/path = NodePath("Death:texture")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ) ] }
+tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ) ] }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Death/shirt:texture")
 tracks/4/interp = 1
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 72 ), ExtResource( 73 ), null ] }
+tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 90 ), ExtResource( 91 ), null ] }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Death:visibility/visible")
 tracks/5/interp = 1
@@ -801,7 +1020,6 @@ tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "updat
 
 [sub_resource type="Animation" id=58]
 
-resource/name = "lethal_r_b"
 length = 1.0
 loop = false
 step = 0.1
@@ -824,12 +1042,12 @@ tracks/3/type = "value"
 tracks/3/path = NodePath("Death:texture")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ) ] }
+tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ) ] }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Death/shirt:texture")
 tracks/4/interp = 1
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 77 ), ExtResource( 78 ), null ] }
+tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 92 ), ExtResource( 93 ), null ] }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Death:visibility/visible")
 tracks/5/interp = 1
@@ -838,7 +1056,6 @@ tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "updat
 
 [sub_resource type="Animation" id=59]
 
-resource/name = "lethal_r_g"
 length = 1.0
 loop = false
 step = 0.1
@@ -861,12 +1078,12 @@ tracks/3/type = "value"
 tracks/3/path = NodePath("Death:texture")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ) ] }
+tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ) ] }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Death/shirt:texture")
 tracks/4/interp = 1
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 68 ), ExtResource( 69 ), null ] }
+tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 97 ), ExtResource( 98 ), null ] }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Death:visibility/visible")
 tracks/5/interp = 1
@@ -875,7 +1092,6 @@ tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "updat
 
 [sub_resource type="Animation" id=60]
 
-resource/name = "lethal_r_n"
 length = 1.0
 loop = false
 step = 0.1
@@ -898,30 +1114,532 @@ tracks/3/type = "value"
 tracks/3/path = NodePath("Death:texture")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ) ] }
+tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ) ] }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Death/shirt:texture")
 tracks/4/interp = 1
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 70 ), ExtResource( 71 ), null ] }
+tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 90 ), ExtResource( 91 ), null ] }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Death:visibility/visible")
 tracks/5/interp = 1
 tracks/5/imported = false
 tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
 
+[sub_resource type="Animation" id=61]
+
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("head:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("legs:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Death:texture")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Death/shirt:texture")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 92 ), ExtResource( 93 ), null ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("Death:visibility/visible")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
+
+[sub_resource type="Animation" id=62]
+
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("head:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("legs:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Death:texture")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Death/shirt:texture")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 97 ), ExtResource( 98 ), null ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("Death:visibility/visible")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
+
+[sub_resource type="Animation" id=63]
+
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("head:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("legs:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Death:texture")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Death/shirt:texture")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 88 ), ExtResource( 89 ), null ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("Death:visibility/visible")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
+
+[sub_resource type="Animation" id=64]
+
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("head:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("legs:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Death:texture")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Death/shirt:texture")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 90 ), ExtResource( 91 ), null ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("Death:visibility/visible")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
+
+[sub_resource type="Animation" id=65]
+
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("head:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("legs:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Death:texture")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Death/shirt:texture")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 92 ), ExtResource( 93 ), null ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("Death:visibility/visible")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
+
+[sub_resource type="Animation" id=66]
+
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("head:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("legs:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Death:texture")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Death/shirt:texture")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 97 ), ExtResource( 98 ), null ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("Death:visibility/visible")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
+
+[sub_resource type="Animation" id=67]
+
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("head:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("legs:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Death:texture")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Death/shirt:texture")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 88 ), ExtResource( 89 ), null ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("Death:visibility/visible")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
+
+[sub_resource type="Animation" id=68]
+
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("head:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("legs:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Death:texture")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Death/shirt:texture")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":1, "values":[ ExtResource( 90 ), ExtResource( 91 ), null ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("Death:visibility/visible")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ true ] }
+
+[sub_resource type="Animation" id=69]
+
+resource/name = "non_lethal_b"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body/torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 105 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("body/torso/shirt_r:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("body/arm_l:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("body/arm_r:visibility/visible")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+
+[sub_resource type="Animation" id=70]
+
+resource/name = "non_lethal_g"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body/torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 106 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("body/torso/shirt_r:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("body/arm_l:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("body/arm_r:visibility/visible")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+
+[sub_resource type="Animation" id=71]
+
+resource/name = "non_lethal_n"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body/torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 107 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("body/torso/shirt_r:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("body/arm_l:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("body/arm_r:visibility/visible")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+
+[sub_resource type="Animation" id=72]
+
+resource/name = "non_lethal_r"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("body/torso/shirt_l:texture")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ ExtResource( 108 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("body/torso/shirt_r:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("body/arm_l:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("body/arm_r:visibility/visible")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ false ] }
+
 [node name="Node2D" type="Node2D"]
 
 script/script = ExtResource( 1 )
 
+[node name="legs" type="Node2D" parent="."]
+
+script/script = ExtResource( 2 )
+
+[node name="pants" type="Sprite" parent="legs"]
+
+texture = ExtResource( 3 )
+
+[node name="leg_r" type="Area2D" parent="legs"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 46 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 47 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 48 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 49 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/4/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 4 )
+
+[node name="foot_r" type="Sprite" parent="legs/leg_r"]
+
+texture = ExtResource( 5 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="legs/leg_r"]
+
+visibility/visible = false
+build_mode = 0
+polygon = Vector2Array( 0, 35, -16.9174, 34.6525, -37.3, 39.1819, -36.0059, 77.4895, -25.0058, 91.5936, -43.4472, 93.8584, -62.2121, 94.5054, -57.0356, 85.123, -48.6237, 82.2112, -73.2122, 32.58, -62.2121, 20.6093, -44.4178, 12.8445, -15.6233, 0.226675, -5.59378, -0.0968571, -3.97612, -3.65572, 0, -5 )
+shape_range = Vector2( 0, 4 )
+trigger = false
+
+[node name="leg_l" type="Area2D" parent="legs"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 50 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 51 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 52 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 53 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 54 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 55 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/5/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 6 )
+
+[node name="foot_l" type="Sprite" parent="legs/leg_l"]
+
+transform/pos = Vector2( 0.323532, -0.323532 )
+texture = ExtResource( 7 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="legs/leg_l"]
+
+visibility/visible = false
+build_mode = 0
+polygon = Vector2Array( 0, -5, 6.33477, -3.6273, 8.3186, -0.320916, 18.4694, -0.47747, 67.6465, 28.317, 71.2053, 36.0818, 65.0582, 54.5232, 58.5875, 82.1542, 64.7347, 81.9614, 68.2935, 86.1674, 69.9112, 94.5792, 38.5285, 89.7262, 45.6462, 77.7555, 36.5873, 40.5492, 20.0871, 34.9183, 0, 35 )
+shape_range = Vector2( 0, 5 )
+trigger = false
+
+[node name="leg_disarm" type="AnimationPlayer" parent="legs"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/l_leg_b = SubResource( 73 )
+anims/l_leg_g = SubResource( 74 )
+anims/l_leg_n = SubResource( 75 )
+anims/l_leg_r = SubResource( 76 )
+anims/r_leg_b = SubResource( 77 )
+anims/r_leg_g = SubResource( 78 )
+anims/r_leg_n = SubResource( 79 )
+anims/r_leg_r = SubResource( 80 )
+next/l_leg_b = ""
+next/l_leg_g = ""
+next/l_leg_r = ""
+next/r_leg_b = ""
+next/r_leg_g = ""
+next/r_leg_r = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
 [node name="body" type="Node2D" parent="."]
 
-editor/display_folded = true
-script/script = ExtResource( 2 )
+script/script = ExtResource( 18 )
 
 [node name="torso" type="Area2D" parent="body"]
 
-editor/display_folded = true
 input/pickable = true
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -942,15 +1660,15 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 3 )
+script/script = ExtResource( 19 )
 
 [node name="shirt_l" type="Sprite" parent="body/torso"]
 
-texture = ExtResource( 4 )
+texture = ExtResource( 20 )
 
 [node name="shirt_r" type="Sprite" parent="body/torso"]
 
-texture = ExtResource( 5 )
+texture = ExtResource( 21 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="body/torso"]
 
@@ -982,14 +1700,15 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 6 )
+script/script = ExtResource( 22 )
 
 [node name="hand_l" type="Sprite" parent="body/arm_l"]
 
-texture = ExtResource( 7 )
+texture = ExtResource( 23 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="body/arm_l"]
 
+visibility/visible = false
 build_mode = 0
 polygon = Vector2Array( 35, -65, 51.0879, -59.1868, 71.7941, -36.5394, 71.4705, -30.7158, 49.7938, -0.303703, 58.5292, 8.23891, 50.4409, 16.3272, 42.6761, 14.7097, 45.2643, 8.56253, 35, 0.797733, 30.7053, 3.06247, 28.1171, 0.797733, 30.0583, -6.64353, 39.4407, -4.70233, 49.4703, -37.0557, 35, -43 )
 shape_range = Vector2( 0, 4 )
@@ -1011,17 +1730,27 @@ autoplay = ""
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/draw_l = SubResource( 12 )
-anims/draw_l_b = SubResource( 13 )
-anims/draw_l_g = SubResource( 14 )
-anims/draw_l_r = SubResource( 15 )
-next/draw_l_b = ""
-next/draw_l_g = ""
-next/draw_l_r = ""
+anims/dyn_draw_l = SubResource( 81 )
+anims/dyn_draw_l_b = SubResource( 82 )
+anims/dyn_draw_l_g = SubResource( 83 )
+anims/dyn_draw_l_r = SubResource( 84 )
+anims/gun_draw_l = SubResource( 12 )
+anims/gun_draw_l_b = SubResource( 13 )
+anims/gun_draw_l_g = SubResource( 14 )
+anims/gun_draw_l_r = SubResource( 15 )
+next/dyn_draw_l = ""
+next/dyn_draw_l_b = ""
+next/dyn_draw_l_g = ""
+next/dyn_draw_l_r = ""
+next/gun_draw_l_b = ""
+next/gun_draw_l_g = ""
+next/gun_draw_l_r = ""
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
 autoplay = ""
+
+[node name="weapon" type="Sprite" parent="body/arm_l"]
 
 [node name="arm_r" type="Area2D" parent="body"]
 
@@ -1048,11 +1777,11 @@ gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 29 )
+script/script = ExtResource( 48 )
 
 [node name="hand_r" type="Sprite" parent="body/arm_r"]
 
-texture = ExtResource( 30 )
+texture = ExtResource( 49 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="body/arm_r"]
 
@@ -1078,13 +1807,47 @@ autoplay = ""
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/draw_r = SubResource( 23 )
-anims/draw_r_b = SubResource( 24 )
-anims/draw_r_g = SubResource( 25 )
-anims/draw_r_r = SubResource( 26 )
-next/draw_r_b = ""
-next/draw_r_g = ""
-next/draw_r_r = ""
+anims/dyn_draw_r = SubResource( 85 )
+anims/dyn_draw_r_b = SubResource( 86 )
+anims/dyn_draw_r_g = SubResource( 87 )
+anims/dyn_draw_r_r = SubResource( 88 )
+anims/gun_draw_r = SubResource( 23 )
+anims/gun_draw_r_b = SubResource( 24 )
+anims/gun_draw_r_g = SubResource( 25 )
+anims/gun_draw_r_r = SubResource( 26 )
+next/dyn_draw_r = ""
+next/dyn_draw_r_b = ""
+next/dyn_draw_r_g = ""
+next/dyn_draw_r_r = ""
+next/gun_draw_r_b = ""
+next/gun_draw_r_g = ""
+next/gun_draw_r_r = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="weapon" type="Sprite" parent="body/arm_r"]
+
+[node name="hand_disarm" type="AnimationPlayer" parent="body"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/l_hand_b = SubResource( 27 )
+anims/l_hand_g = SubResource( 28 )
+anims/l_hand_n = SubResource( 29 )
+anims/l_hand_r = SubResource( 30 )
+anims/r_hand_b = SubResource( 31 )
+anims/r_hand_g = SubResource( 32 )
+anims/r_hand_n = SubResource( 33 )
+anims/r_hand_r = SubResource( 34 )
+next/l_hand_b = ""
+next/l_hand_g = ""
+next/l_hand_r = ""
+next/r_hand_b = ""
+next/r_hand_g = ""
+next/r_hand_r = ""
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -1092,33 +1855,33 @@ autoplay = ""
 
 [node name="head" type="Node2D" parent="."]
 
-script/script = ExtResource( 52 )
+script/script = ExtResource( 78 )
 
 [node name="head" type="Area2D" parent="head"]
 
 editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 27 )
+shapes/0/shape = SubResource( 35 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 28 )
+shapes/1/shape = SubResource( 36 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 29 )
+shapes/2/shape = SubResource( 37 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 30 )
+shapes/3/shape = SubResource( 38 )
 shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/3/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 53 )
+script/script = ExtResource( 79 )
 
 [node name="head" type="Sprite" parent="head/head"]
 
-texture = ExtResource( 54 )
+texture = ExtResource( 80 )
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="head/head"]
 
@@ -1129,129 +1892,44 @@ trigger = false
 
 [node name="mask" type="Sprite" parent="head"]
 
-texture = ExtResource( 55 )
+texture = ExtResource( 81 )
 
 [node name="hat" type="Area2D" parent="head"]
 
-editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 31 )
+shapes/0/shape = SubResource( 39 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 32 )
+shapes/1/shape = SubResource( 40 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 33 )
+shapes/2/shape = SubResource( 41 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 34 )
+shapes/3/shape = SubResource( 42 )
 shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 35 )
+shapes/4/shape = SubResource( 43 )
 shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 36 )
+shapes/5/shape = SubResource( 44 )
 shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/5/trigger = false
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
 linear_damp = 0.1
 angular_damp = 1.0
-script/script = ExtResource( 56 )
+script/script = ExtResource( 82 )
 
 [node name="hat" type="Sprite" parent="head/hat"]
 
-texture = ExtResource( 57 )
+transform/pos = Vector2( 0, 0.473335 )
+texture = ExtResource( 83 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="head/hat"]
 
 build_mode = 0
 polygon = Vector2Array( 0.213287, -90.223, 5.77428, -94.9896, 11.3682, -93.2763, 15.7376, -88.9069, 18.6934, -82.4813, 25.635, -79.4983, 27.6211, -81.4843, 27.2238, -70.7595, 17.2797, -62.0478, 8.92645, -57.8069, -4.82434, -57.8069, -20.4419, -65.1985, -27.1945, -72.3484, -27.1945, -81.0871, -25.6057, -76.7178, -21.7879, -81.8387, -17.2641, -82.676, -14.0864, -87.8398, -5.72393, -95.0755, -2.56721, -93.0035 )
-shape_range = Vector2( 0, 5 )
-trigger = false
-
-[node name="legs" type="Node2D" parent="."]
-
-editor/display_folded = true
-script/script = ExtResource( 58 )
-
-[node name="pants" type="Sprite" parent="legs"]
-
-texture = ExtResource( 59 )
-
-[node name="leg_r" type="Area2D" parent="legs"]
-
-input/pickable = true
-shapes/0/shape = SubResource( 37 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
-shapes/1/shape = SubResource( 38 )
-shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/1/trigger = false
-shapes/2/shape = SubResource( 39 )
-shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/2/trigger = false
-shapes/3/shape = SubResource( 40 )
-shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/3/trigger = false
-shapes/4/shape = SubResource( 41 )
-shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/4/trigger = false
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-script/script = ExtResource( 60 )
-
-[node name="foot_r" type="Sprite" parent="legs/leg_r"]
-
-texture = ExtResource( 61 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="legs/leg_r"]
-
-visibility/visible = false
-build_mode = 0
-polygon = Vector2Array( 0, 35, -16.9174, 34.6525, -37.3, 39.1819, -36.0059, 77.4895, -25.0058, 91.5936, -43.4472, 93.8584, -62.2121, 94.5054, -57.0356, 85.123, -48.6237, 82.2112, -73.2122, 32.58, -62.2121, 20.6093, -44.4178, 12.8445, -15.6233, 0.226675, -5.59378, -0.0968571, -3.97612, -3.65572, 0, -5 )
-shape_range = Vector2( 0, 4 )
-trigger = false
-
-[node name="leg_l" type="Area2D" parent="legs"]
-
-input/pickable = true
-shapes/0/shape = SubResource( 42 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
-shapes/1/shape = SubResource( 43 )
-shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/1/trigger = false
-shapes/2/shape = SubResource( 44 )
-shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/2/trigger = false
-shapes/3/shape = SubResource( 45 )
-shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/3/trigger = false
-shapes/4/shape = SubResource( 46 )
-shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/4/trigger = false
-shapes/5/shape = SubResource( 47 )
-shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/5/trigger = false
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-script/script = ExtResource( 62 )
-
-[node name="foot_l" type="Sprite" parent="legs/leg_l"]
-
-transform/pos = Vector2( 0.323532, -0.323532 )
-texture = ExtResource( 63 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="legs/leg_l"]
-
-visibility/visible = false
-build_mode = 0
-polygon = Vector2Array( 0, -5, 6.33477, -3.6273, 8.3186, -0.320916, 18.4694, -0.47747, 67.6465, 28.317, 71.2053, 36.0818, 65.0582, 54.5232, 58.5875, 82.1542, 64.7347, 81.9614, 68.2935, 86.1674, 69.9112, 94.5792, 38.5285, 89.7262, 45.6462, 77.7555, 36.5873, 40.5492, 20.0871, 34.9183, 0, 35 )
 shape_range = Vector2( 0, 5 )
 trigger = false
 
@@ -1261,26 +1939,26 @@ process_mode = 1
 wait_time = 1.0
 one_shot = false
 autostart = false
-script/script = ExtResource( 64 )
+script/script = ExtResource( 84 )
 
 [node name="death_anim" type="AnimationPlayer" parent="."]
 
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/lethal_b_g = SubResource( 49 )
-anims/lethal_b_n = SubResource( 50 )
-anims/lethal_b_r = SubResource( 51 )
-anims/lethal_g_b = SubResource( 52 )
-anims/lethal_g_n = SubResource( 53 )
-anims/lethal_g_r = SubResource( 54 )
-anims/lethal_n_b = SubResource( 55 )
-anims/lethal_n_g = SubResource( 56 )
-anims/lethal_n_n = SubResource( 48 )
-anims/lethal_n_r = SubResource( 57 )
-anims/lethal_r_b = SubResource( 58 )
-anims/lethal_r_g = SubResource( 59 )
-anims/lethal_r_n = SubResource( 60 )
+anims/lethal_b_g = SubResource( 56 )
+anims/lethal_b_n = SubResource( 57 )
+anims/lethal_b_r = SubResource( 58 )
+anims/lethal_g_b = SubResource( 59 )
+anims/lethal_g_n = SubResource( 60 )
+anims/lethal_g_r = SubResource( 61 )
+anims/lethal_n_b = SubResource( 62 )
+anims/lethal_n_g = SubResource( 63 )
+anims/lethal_n_n = SubResource( 64 )
+anims/lethal_n_r = SubResource( 65 )
+anims/lethal_r_b = SubResource( 66 )
+anims/lethal_r_g = SubResource( 67 )
+anims/lethal_r_n = SubResource( 68 )
 next/lethal_b_g = ""
 next/lethal_b_n = ""
 next/lethal_b_r = ""
@@ -1301,8 +1979,25 @@ autoplay = ""
 [node name="Death" type="Sprite" parent="."]
 
 visibility/visible = false
-texture = ExtResource( 81 )
+texture = ExtResource( 101 )
 
 [node name="shirt" type="Sprite" parent="Death"]
+
+[node name="non_lethal_anim" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/non_lethal_b = SubResource( 69 )
+anims/non_lethal_g = SubResource( 70 )
+anims/non_lethal_n = SubResource( 71 )
+anims/non_lethal_r = SubResource( 72 )
+next/non_lethal_b = ""
+next/non_lethal_g = ""
+next/non_lethal_r = ""
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
 
 

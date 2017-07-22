@@ -131,31 +131,53 @@ func twitch():
 func draw():
 		#draw animation
 	var body_flags = get_node("body/torso").body_flags
+	var anim_name = "gun_draw"
+	
 	if(get_node("body").get_l_handedness()):
+		var draw_anim = get_node("body/arm_l/draw")
+		anim_name += "_l"
 		if(body_flags[0]):
-			get_node("body/arm_l/draw").play("draw_l_r")
+			anim_name += "_r"
 		elif(body_flags[1]):
-			get_node("body/arm_l/draw").play("draw_l_g")
+			anim_name += "_g"
 		elif(body_flags[2]):
-			get_node("body/arm_l/draw").play("draw_l_b")
-		else:
-			get_node("body/arm_l/draw").play("draw_l")
+			anim_name += "_b"
+		draw_anim.play(anim_name)
+		
 	else:
+		var draw_anim = get_node("body/arm_r/draw")
+		anim_name += "_r"
 		if(body_flags[0]):
-			get_node("body/arm_r/draw").play("draw_r_r")
+			anim_name += "_r"
 		elif(body_flags[1]):
-			get_node("body/arm_r/draw").play("draw_r_g")
+			anim_name += "_g"
 		elif(body_flags[2]):
-			get_node("body/arm_r/draw").play("draw_r_b")
-		else:
-			get_node("body/arm_r/draw").play("draw_r")
+			anim_name += "_b"
+		draw_anim.play(anim_name)
+
+func non_lethal_anim():
+	var body_flags = get_node("body/torso").get_body_flags()
+	var non_lethal = get_node("non_lethal_anim")
+	var anim_name = "non_lethal"
+	non_lethal.connect("finished", self, "on_death_finished")
+	
+	if(body_flags[0]):
+		anim_name += "_r"
+	elif(body_flags[1]):
+		anim_name += "_g"
+	elif(body_flags[2]):
+		anim_name += "_b"
+	else:
+		anim_name += "_n"
+	
+	non_lethal.play(anim_name)
 
 func lethal_anim():
 	var body_flags = get_node("body/torso").get_body_flags()
 	var legs_flags = get_node("legs").get_legs_flags()
 	var death_anim = get_node("death_anim")
 	var anim_name = "lethal_"
-	death_anim.connect("finished", self, "on_death_finish")
+	death_anim.connect("finished", self, "on_death_finished")
 	
 	if(legs_flags[0]):
 		anim_name += "r_"
@@ -176,7 +198,7 @@ func lethal_anim():
 	
 	death_anim.play(anim_name)
 
-func on_death_finish():
+func on_death_finished():
 	kill()
 
 func on_timer_timeout():
@@ -215,7 +237,7 @@ func on_twitch_timeout():
 
 func non_lethal():
 	get_parent().set_non_lethal(1)
-	kill()
+	non_lethal_anim()
 
 func lethal():
 	get_parent().set_lethal(1)
